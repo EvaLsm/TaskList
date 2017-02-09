@@ -1,0 +1,39 @@
+/*===========
+  * 引导页样式
+    ===========*/
+#guidePage .swiper-container .swiper-wrapper .img-one {
+  background: url("../../img/guidePage/guidePage.jpg") no-repeat;
+  background-size: 100% 800px;
+}
+#guidePage .swiper-container .swiper-wrapper .img-two {
+  background: url("../../img/guidePage/guidePage2.gif") no-repeat;
+  background-size: 100% 800px;
+}
+#guidePage .swiper-container .swiper-wrapper .img-three {
+  background: url("../../img/guidePage/guidePage1.png") no-repeat;
+  background-size: 100% 850px;
+}
+
+#guidePage .swiper-container .swiper-wrapper .slide-img .logo-img {
+  background: url("../../img/guidePage/logo.png") no-repeat;
+  background-size: 100px 100px;
+  width: 100px;
+  height: 100px;
+  margin: 20px auto;
+}
+
+#guidePage .swiper-container .swiper-wrapper .slide-img .text {
+  width: 100%;
+  margin: 100px auto;
+}
+
+#guidePage .swiper-container .swiper-wrapper .slide-img .text h2 {
+  color: #ffffff;
+  text-align: center;
+}
+
+#guidePage .swiper-container .swiper-wrapper .slide-img .button {
+  display: inline-block;
+  width: 50%;
+  margin: 446px 100px;
+}

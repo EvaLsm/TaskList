@@ -1,0 +1,84 @@
+/*==============
+  *  分类页面样式
+     =============*/
+/*样式初始化*/
+#classify {
+  background-image: none;
+  background-color: #fff;
+}
+
+#classify div, ul, li, h1, h2, h3, img, a {
+  font-family: '微软雅黑';
+  font-size: 16px;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  list-style: none;
+  color: #666;
+  font-weight: 300;
+}
+
+#classify a, #classify span {
+  display: block;
+  text-decoration: none;
+}
+
+#classify body {
+  overflow: hidden;
+}
+
+/*顶部搜索框*/
+#classify .header-search .search-input{
+  margin:0 2rem 0 1rem;
+  background: #FFFFFF;
+  height: 34px;
+}
+
+/*清单列表*/
+#classify .main .todo-list li{
+  width: 100%;
+  height: 3.5rem;
+  line-height: 3.5rem;
+  border-bottom: 1px solid #ededed;
+}
+#classify .main .todo-list li .toggle{
+  width: 1.2rem;
+  height: 1.2rem;
+  margin: 0 0.8rem;
+}
+
+#classify .main .todo-list .list-txt{
+  font-size: 1.2rem;
+}
+
+#classify .main .todo-list .completed{
+  text-decoration: line-through;
+}
+#classify .main .todo-list .destroy{
+  color: #C9C9C9;
+}
+
+
+#classify .main .todo-list .completed label{
+  color: #C9C9C9;
+}
+
+  /*页脚*/
+
+#classify .footer-button button{
+  border: solid 1px #afafaf;
+}
+
+#classify .footer-button .listType{
+  height: 2rem;
+  margin: 0.4rem;
+}
+
+#classify .footer-button .toggle-all{
+  width: 1.2rem;
+  height: 1.2rem;
+  margin: 0.9rem 0;
+}
+#classify .footer-button .toggle-all-txt{
+  margin: 0.8rem 0.5rem;
+}

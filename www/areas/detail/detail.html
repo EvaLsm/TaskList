@@ -1,0 +1,44 @@
+<ion-view id="classify" view-title="分类" hide-back-button="true" cache-view="false">
+
+    <!-- 页眉 -->
+    <header class="bar bar-header bar-assertive">
+      <a class="button icon ion-android-arrow-back button-clear" ui-sref="home"></a>
+      <h3 class="title">清单列表</h3>
+      <button class="button button-clear">
+        <i class="icon ion-android-share"></i>
+      </button>
+    </header>
+
+    <ion-content class="scroll-content has-header" scroll="false">
+      <!-- 顶部搜索框 -->
+      <section class="header-input item-input-inset bar bar-calm header-search">
+        <span class="badge badge-assertive">{{todos.length}}</span>
+        <div class="item-input-wrapper search-input" >
+            <input type="text" placeholder="添加一个清单" ng-model="text.txt" autofocus>
+        </div>
+        <button class="button button-clear">
+          <button class="button button-assertive" ng-click="add()">添加</button>
+        </button>
+      </section>
+      <!-- 清单列表 -->
+      <section class="main">
+        <ul class="todo-list">
+          <li ng-repeat="todo in todos track by $index" ng-class="{completed:todo.completed}">
+            <div>
+              <input class="toggle" type="checkbox" ng-model="todo.completed">
+              <label class="list-txt">{{todo.text}}</label>
+              <span class="icon ion-close-round floatR destroy" ng-click="remove(todo.id)"></span>
+            </div>
+          </li>
+        </ul>
+      </section>
+  </ion-content>
+  <div class="bar bar-footer footer-button">
+    <button class="button listType">全&nbsp&nbsp部</button>
+    <button class="button listType">未完成</button>
+    <button class="button listType">已完成</button>
+    <label class="toggle-all-txt">全选:</label>
+    <input class="toggle-all" type="checkbox" ng-click="checkAll()">
+    <button class="button pull-right" ng-click="removeAll()">清空已完成</button>
+  </div>
+</ion-view>
